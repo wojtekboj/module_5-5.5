@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Moduł 5. Bootstrap Komponenty JS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <nav class="nav navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">XmediaDesign</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button type="submit" class="btn btn-default">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                </ol>
+                <!-- slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active example-1">
+                        <img src="https://images.unsplash.com/photo-1508693926297-1d61ee3df82a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7bb93ea6780c3e286815b252524a02c2&auto=format&fit=crop&w=1500&q=80" alt="#">
+                    </div>
+                    <div class="item example-2">
+                        <img src="https://images.unsplash.com/photo-1491747677313-84f7c8e10cc6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fd231a8eed81b26dcbb19f798db57340&auto=format&fit=crop&w=1500&q=80" alt="#">
+                    </div>
+                    <div class="item example-3">
+                        <img src="https://images.unsplash.com/photo-1515614457209-3c7081d62743?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e00b2a9ca07d01da1a028c40187ff63a&auto=format&fit=crop&w=1500&q=80" alt="#">
+                    </div>
+                    <div class="item example-4">
+                        <img src="https://images.unsplash.com/photo-1522205940279-d75807ebcd91?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6e84041cbb7404fb7fafc42bec0f4a91&auto=format&fit=crop&w=1500&q=80" alt="#">
+                    </div>
+                    <div class="item example-5">
+                        <img src="https://images.unsplash.com/photo-1515079769718-4db5eed13126?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f441502147b2994477df556e5a85d2f1&auto=format&fit=crop&w=1500&q=80" alt="#">
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#home">Hobby</a></li>
+                <li><a data-toggle="tab" href="#menu1">Who am I?</a></li>
+                <li><a data-toggle="tab" href="#menu2">More about me</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                    <h3>Hobby</h3>
+                    <ul>
+                        <li>new technologies</li>
+                        <li>sport</li>
+                        <li>minimalism</li>
+                        <li>automotive</li>
+                    </ul>
+                </div>
+                <div id="menu1" class="tab-pane fade">
+                    <h3>Who am I?</h3>
+                    <p>I'm 34 years old and I'm working as ICT. I have been learning to create websites for some time now. In the future I want to become a front-end developer.</p>
+                </div>
+                <div id="menu2" class="tab-pane fade">
+                    <h3>More about me</h3>
+                    <p>In my free time I help my friends solve various problems with electronic equipment (mobile phones, computers or remotely via Teamviewer). It makes me happy :). Always try to bring the matter to the end and I believe that there are no things that can not be repaired :)
+                        Recently I have started to learn web development. My goal is to work as a front-end developer. I've already known basics of HTML and CSS. Everyday I practice a lot and learn new things.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">
+                Open modal
+            </button>
+            <div id="exampleModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- tutaj umieszczamy zawartość-->
+                        <div class="modal-header">
+                            <h4>Author</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>I'm 34 years old and I'm working as ICT. I have been learning to create websites for some time now. In the future I want to become a front-end developer. This is my first page with carousel and modal bootstrap components :)</p>
+                        </div>
+                        <div class="modal-footer">
+                            <p>Footer</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    </body>
+</html>
